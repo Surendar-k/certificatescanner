@@ -1,20 +1,19 @@
-// Wait for the DOM to fully load
+
 document.addEventListener('DOMContentLoaded', function () {
 
-    // Get the form elements
+   
     const form = document.querySelector('.form-tab');
     const nameField = document.getElementById('name');
     const emailField = document.getElementById('email');
     const passwordField = document.getElementById('password');
     const confirmPasswordField = document.getElementById('confirm-password');
     
-    // Validate form on submit
     form.addEventListener('submit', function (event) {
-        event.preventDefault(); // Prevent form submission to allow validation
+        event.preventDefault(); 
 
         let valid = true;
 
-        // Validate Name field
+        
         if (nameField.value.trim() === '') {
             alert('Name is required');
             valid = false;
@@ -47,13 +46,12 @@ document.addEventListener('DOMContentLoaded', function () {
             valid = false;
         }
 
-        // If all fields are valid, submit the form
         if (valid) {
             form.submit();
+            window.location.href = 'login.html'; // Change this URL to your actual login page
         }
     });
 
-    // Function to validate email format
     function validateEmail(email) {
         const re = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
         return re.test(String(email).toLowerCase());
