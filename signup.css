@@ -241,10 +241,12 @@ body {
 }
 
 .form-container input:focus {
-    border-color:red; 
-    box-shadow: 1px 1px 3px 3px rgba(180, 98, 195, 0.5); 
-    outline:red; 
+    border-color: red; 
+    box-shadow: 0 0 0 3px rgba(180, 98, 195, 0.5); /* Creates a border-like shadow */
+    outline: none;  /* Remove default outline */
 }
+
+
 
 
 .register-btn {
