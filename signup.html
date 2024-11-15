@@ -1,228 +1,98 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Extreme Certificate Verification App</title>
-    <!-- Meta -->
     <meta charset="UTF-8">
-    <meta  name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui"/>
-    <link rel="stylesheet" href="https://cvs.wsplhosting.biz/assets/css/style.css">
-    <link rel="stylesheet" href="https://cvs.wsplhosting.biz/assets/css/verify.css">
-    <link rel="stylesheet" href="https://cvs.wsplhosting.biz/assets/fonts/tabler-icons.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="signup.css">
+    <link href="https://cdn.jsdelivr.net/npm/@tabler/icons@latest/css/tabler-icons.min.css" rel="stylesheet">
+
+   
 </head>
-<body class="theme-1">
-    <header class="site-header">
-        <div class="header-wrapper">
-            <div class="me-auto flex-grow-1 d-flex align-items-center">
-                <ul class="list-unstyled header-menu-nav">
-                    <li class="hdr-itm mob-hamburger">
-                    <a href="#!" class="app-head-link" id="mobile-collapse">
-                        <div class="hamburger hamburger-arrowturn">
-                        <div class="hamburger-box">
-                            <div class="hamburger-inner">
-                                
-                            </div>
-                        </div>
-                        </div>
-                    </a>
-                    </li>
-                </ul>
-            </div>
+<body>
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <a href="#" class="b-brand">
+            <img src="https://raw.githubusercontent.com/abisanthm/abisanthm.github.io/main2/1.png" alt="Logo" class="logo">
+        </a>
+        <nav>
+            <ul>
+           
+                <li>
+                    
+                    <a href="#"><span class="cuida--dashboard-outline"></span> Dashboard </a>
+                </li>
+                <li>
+                  
+                    <a href="#"><span class="cuida--dashboard-outline"></span>Students </a>
+                </li>
+                <li>
+                    
+                    <a href="#"> <span class="cuida--dashboard-outline"></span>Programs<span class="iconamoon--arrow-right-2-light"></span></a>
+                </li>
+                <li>
+                    
+                    <a href="#"><span class="cuida--dashboard-outline"></span>Users<span class="iconamoon--arrow-right-2-light"></span></i></a>
+                </li>
+                <li>
+               
+                    <a href="#"><span class="cuida--dashboard-outline"></span>Settings <span class="iconamoon--arrow-right-2-light"></span></a>
+                </li>
+                <li>
+                   
+                    <a href="#"><span class="cuida--dashboard-outline"></span>Logs <i class="fas fa-clipboard-list"></i></a>
+                </li>
+                <li>
+                    <div class="i-cuida:dashboard-outline w-1em h-1em"></div>
+                    <a href="#"><span class="cuida--dashboard-outline"></span>Logout <i class="fas fa-sign-out-alt"></i></a>
+                </li>
+            </ul>
+        </nav>
+        
+    </div>
+
+    <!-- Main Content -->
+    <div class="main-content">
+        <!-- Header -->
+        <div class="header">
+         
+        
             <div class="justify-content-center py-3">
-                <a href="/" target="_blank" class="btn btn-primary btn-sm">Visit Site</a>
+                <a href="/" target="_blank" class="visit-site-btn">Visit Site</a>
             </div>
         </div>
-    </header>
-
- <aside class="app-sidebar app-light-sidebar" style="background-color:white ">
-   <div class="app-navbar-wrapper">
-     <div class="brand-link brand-logo">
-       <a href="#" class="b-brand">
-                    <img src="https://raw.githubusercontent.com/abisanthm/abisanthm.github.io/main2/1.png" alt="Default Image" class="logo logo-lg" style="background-color: white;">
-               </a>
-     </div>
-     <div class="navbar-content">
-       <ul class="app-navbar">
-        <li class="nav-item">
-            <a href="/dashboard" class="nav-link"><span class="nav-icon"><i class="ti ti-layout-2"></i></span><span class="nav-text">Dashboard</span></a>
-        </li>
-        <li class="nav-item ">
-            <a href="/students" class="nav-link "><span class="nav-icon"><i class="ti ti-layout-2"></i></span><span class="nav-text">Students</span></a>
-        </li>
-        <li class="nav-item nav-hasmenu ">
-            <a href="#!" class="nav-link ">
-              <span class="nav-icon">
-                <i class="ti ti-layout-2"></i>
-              </span>
-              <span class="nav-text">Programs</span>
-              <span class="nav-arrow">
-                <i data-feather="chevron-right"></i>
-              </span>
-            </a>
-            <ul class="nav-submenu">
-                                        </ul>
-        </li>
-        <li class="nav-item nav-hasmenu ">
-           <a href="#!" class="nav-link ">
-             <span class="nav-icon">
-               <i class="ti ti-layout-2"></i>
-             </span>
-             <span class="nav-text">Users</span>
-             <span class="nav-arrow">
-               <i data-feather="chevron-right"></i>
-             </span>
-           </a>
-           <ul class="nav-submenu">
-                                     </ul>
-         </li>
-         <li class="nav-item nav-hasmenu ">
-           <a href="#!" class="nav-link">
-             <span class="nav-icon">
-               <i class="ti ti-layout-2"></i>
-             </span>
-             <span class="nav-text">Settings</span>
-             <span class="nav-arrow">
-               <i data-feather="chevron-right"></i>
-             </span>
-           </a>
-           <ul class="nav-submenu">
-                                                                   </ul>
-         </li>
-         <li class="nav-item ">
-          <a href="/user-logs" class="nav-link "><span class="nav-icon"><i class="ti ti-layout-2"></i></span><span class="nav-text">Logs</span></a>
-          </li>
-         <li class="nav-item">
-           <a class="nav-link" href="#" onclick="event.preventDefault();
-                                                     document.getElementById('logout-form').submit();">
-             <span class="nav-icon">
-               <i class="ti ti-layout-2"></i>
-             </span>
-             <span class="nav-text">Logout</span>
-             <span class="nav-arrow">
-               </i>
-             </span>
-           </a>
-           <form id="logout-form" action="#" method="POST" class="d-none"> <input type="hidden" name="_token" value="ThOi7KMHskjMs9HIOgRuC1ecNNFlwZoDAe4uUhvt" autocomplete="off"> </form>
-         </li>
-       </ul>
-     </div>
-   </div>
- </aside>
- <!-- { navigation menu } end -->
-
-</body>
-
-<div class="page-content-wrapper">
-    <div class="content-container">
-        <div class="page-content">
-                                    <div class="container">
-    <div class="row justify-content-center">
-        <div class="col-md-8">
-            <div class="card">
-                <div class="card-header">Register</div>
-
-                <div class="card-body">
-                    <form method="POST" action="https://cvs.wsplhosting.biz/register">
-                        <input type="hidden" name="_token" value="ThOi7KMHskjMs9HIOgRuC1ecNNFlwZoDAe4uUhvt" autocomplete="off">
-                        <div class="row mb-3">
-                            <label for="name" class="col-md-4 col-form-label text-md-end">Name</label>
-
-                            <div class="col-md-6">
-                                <input id="name" type="text" class="form-control " name="name" value="" required autocomplete="name" autofocus>
-
-                                                            </div>
-                        </div>
-
-                        <div class="row mb-3">
-                            <label for="email" class="col-md-4 col-form-label text-md-end">Email Address</label>
-
-                            <div class="col-md-6">
-                                <input id="email" type="email" class="form-control " name="email" value="" required autocomplete="email">
-
-                                                            </div>
-                        </div>
-
-                        <div class="row mb-3">
-                            <label for="password" class="col-md-4 col-form-label text-md-end">Password</label>
-
-                            <div class="col-md-6">
-                                <input id="password" type="password" class="form-control " name="password" required autocomplete="new-password">
-
-                                                            </div>
-                        </div>
-
-                        <div class="row mb-3">
-                            <label for="password-confirm" class="col-md-4 col-form-label text-md-end">Confirm Password</label>
-
-                            <div class="col-md-6">
-                                <input id="password-confirm" type="password" class="form-control" name="password_confirmation" required autocomplete="new-password">
-                            </div>
-                        </div>
-
-                        <div class="row mb-0">
-                            <div class="col-md-6 offset-md-4">
-                                <button type="submit" class="btn btn-primary">
-                                    Register
-                                </button>
-                            </div>
-                        </div>
-                    </form>
+        
+        <div class="main-form">
+            <div class="form-container">
+                <p>Register</9>
+                <form class="form-tab">
+                    <div class="form-field">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+        
+                    <div class="form-field">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+        
+                    <div class="form-field">
+                        <label for="password">Password</label>
+                        <input type="password" id="password" name="password" required>
+                    </div>
+        
+                    <div class="form-field">
+                        <label for="confirm-password">Confirm Password</label>
+                        <input type="password" id="confirm-password" name="confirm-password" required>
+                        
+                    </div>
+        <div class="form-field">
+                    <button type="submit" class="register-btn">Register</button>
                 </div>
+                </form>
             </div>
         </div>
-    </div>
-</div>
-        </div>
-    </div>
-</div>
-
-<footer class="app-footer">
-  <div class="footer-wrapper">
-    <div class="py-1">
-        <span class="text-muted">&copy; 2024 Extreme Certificate Verification App. All Rights Reserved.</span>
-    </div>
-  </div>
-</footer>
-
-<!-- Required Js -->
-<script src="https://cvs.wsplhosting.biz/assets/js/plugins/feather.min.js"></script>
-<script src="https://cvs.wsplhosting.biz/assets/js/main.js"></script>
-
-
-<div class="modal fade" id="userDetailsModal" tabindex="-1" role="dialog" aria-labelledby="userDetailsModalLabel" aria-hidden="true">
-    <div class="modal-dialog" role="document">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="userDetailsModalLabel">User Details</h5>
-                <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-
-            </div>
-            <div class="modal-body" id="userDetailsModalBody">
-                <!-- User details will be displayed here -->
-            </div>
-        </div>
-    </div>
-</div>
-
-<div class="modal fade" id="roleDetailsModal" tabindex="-1" role="dialog" aria-labelledby="userDetailsModalLabel" aria-hidden="true">
-    <div class="modal-dialog" role="document">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="roleDetailsModalLabel">Role Details</h5>
-                <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-            </div>
-            <div class="modal-body" id="roleDetailsModalBody">
-                <!-- Role details will be displayed here -->
-            </div>
-        </div>
-    </div>
-</div>
-
-
+        
+  
 </body>
 </html>
-
