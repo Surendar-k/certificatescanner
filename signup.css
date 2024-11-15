@@ -241,10 +241,11 @@ body {
 }
 
 .form-container input:focus {
-    border-color: #d80e62; 
-    box-shadow: 0 0 8px rgba(216, 14, 98, 0.5); 
-    outline: none; 
+    border-color:red; 
+    box-shadow: 1px 1px 3px 3px rgba(180, 98, 195, 0.5); 
+    outline:red; 
 }
+
 
 .register-btn {
     width: 97.21px; 
