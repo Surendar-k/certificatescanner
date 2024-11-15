@@ -1,25 +1,22 @@
-
 document.addEventListener('DOMContentLoaded', function () {
-
-   
     const form = document.querySelector('.form-tab');
     const nameField = document.getElementById('name');
     const emailField = document.getElementById('email');
     const passwordField = document.getElementById('password');
     const confirmPasswordField = document.getElementById('confirm-password');
-    
+
     form.addEventListener('submit', function (event) {
-        event.preventDefault(); 
+        event.preventDefault();
 
         let valid = true;
 
-        
+        // Validate Name
         if (nameField.value.trim() === '') {
             alert('Name is required');
             valid = false;
         }
 
-        // Validate Email field
+        // Validate Email
         if (emailField.value.trim() === '') {
             alert('Email is required');
             valid = false;
@@ -28,7 +25,7 @@ document.addEventListener('DOMContentLoaded', function () {
             valid = false;
         }
 
-        // Validate Password field
+        // Validate Password
         if (passwordField.value.trim() === '') {
             alert('Password is required');
             valid = false;
@@ -37,7 +34,7 @@ document.addEventListener('DOMContentLoaded', function () {
             valid = false;
         }
 
-        // Validate Confirm Password field
+        // Confirm Password
         if (confirmPasswordField.value.trim() === '') {
             alert('Please confirm your password');
             valid = false;
@@ -47,8 +44,14 @@ document.addEventListener('DOMContentLoaded', function () {
         }
 
         if (valid) {
-            form.submit();
-            window.location.href = 'login.html'; // Change this URL to your actual login page
+            const registrationId = `USER${Math.floor(Math.random() * 100000)}`; // Generate a mock ID
+            alert(`Signup successful! Your Registration ID is: ${registrationId}`);
+
+            // Store Registration ID and Email in Local Storage
+            localStorage.setItem('registrationId', registrationId);
+            localStorage.setItem('email', emailField.value.trim());
+
+            window.location.href = 'login.html'; // Redirect to login page
         }
     });
 
