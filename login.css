@@ -107,10 +107,23 @@ input {
     padding: 10px;
     border-radius: 5px;
     font-size: 14px;
+    color:red;
     cursor: pointer;
     flex: 1;
     text-align: center;
 }
+.facebook-btn {
+ 
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    color: lightgreen;
+    cursor: pointer;
+    flex: 1;
+    text-align: center;
+}
+
 
 .google-btn:hover, .facebook-btn:hover {
     background-color:white;
