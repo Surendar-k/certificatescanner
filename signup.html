@@ -1,105 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Extreme Certificate Verification</title>
-    <link rel="stylesheet" href="signup.css">
-    <link href="https://cdn.jsdelivr.net/npm/@tabler/icons@latest/css/tabler-icons.min.css" rel="stylesheet">
-
-   
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign Up Page</title>
+  <link rel="stylesheet" href="signup.css">
 </head>
 <body>
-    <!-- Sidebar -->
-    <div class="sidebar">
-        <a href="#" class="b-brand">
-            <img src="https://raw.githubusercontent.com/abisanthm/abisanthm.github.io/main2/1.png" alt="Logo" class="logo">
-        </a>
-        <nav>
-            <ul>
-           
-                <li>
-                    
-                    <a href="#"><span class="cuida--dashboard-outline"></span> Dashboard </a>
-                </li>
-                <li>
-                  
-                    <a href="#"><span class="cuida--dashboard-outline"></span>Students </a>
-                </li>
-                <li>
-                    
-                    <a href="#"> <span class="cuida--dashboard-outline"></span>Programs<span class="iconamoon--arrow-right-2-light"></span></a>
-                </li>
-                <li>
-                    
-                    <a href="#"><span class="cuida--dashboard-outline"></span>Users<span class="iconamoon--arrow-right-2-light"></span></i></a>
-                </li>
-                <li>
-               
-                    <a href="#"><span class="cuida--dashboard-outline"></span>Settings <span class="iconamoon--arrow-right-2-light"></span></a>
-                </li>
-                <li>
-                   
-                    <a href="#"><span class="cuida--dashboard-outline"></span>Logs <i class="fas fa-clipboard-list"></i></a>
-                </li>
-                <li>
-                    <div class="i-cuida:dashboard-outline w-1em h-1em"></div>
-                    <a href="#"><span class="cuida--dashboard-outline"></span>Logout <i class="fas fa-sign-out-alt"></i></a>
-                </li>
-            </ul>
-        </nav>
-        
+  <div class="container">
+    
+
+    <!-- Left Form Section -->
+    <div class="left-section">
+      <form class="signup-form">
+        <h1>Sign Up!</h1>
+        <p>Join us and be part of something extraordinary!</p>
+
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" id="name" placeholder="Your Name" required>
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" placeholder="Yourmail@gmail.com" required>
+        </div>
+
+        <div class="form-group">
+          <label for="password">Password</label>
+          <input type="password" id="password" placeholder="password" required>
+          <small>Password must contain at least 8 characters, 1 number, and a symbol.</small>
+        </div>
+
+        <div class="form-group">
+          <label for="confirm-password">Re-Type Password</label>
+          <input type="password" id="confirm-password" placeholder="re-type password" required>
+        </div>
+
+        <button type="submit">Sign Up</button>
+        <p>Already a member? <a href="login.html">Sign in</a></p>
+        <div class="actions">
+       
+            <button type="button" class="google-btn">
+                <i class="fab fa-google"></i> Google
+            </button>
+            <button type="button" class="facebook-btn">
+                <i class="fab fa-facebook-f"></i> Facebook
+            </button>
+            
+        </div>
+      </form>
+      
     </div>
-
-    <!-- Main Content -->
-    <div class="main-content">
-        <!-- Header -->
-        <div class="header">
-         
-        
-            <div class="justify-content-center py-3">
-                <a href="/" target="_blank" class="visit-site-btn">Visit Site</a>
-            </div>
-        </div>
-        
-        <div class="main-form">
-            <div class="form-container">
-                <p>Register</9>
-                <form class="form-tab">
-                    <div class="form-field">
-                        <label for="name">Name</label>
-                        <input type="text" id="name" name="name" required>
-                    </div>
-        
-                    <div class="form-field">
-                        <label for="email">Email Address</label>
-                        <input type="email" id="email" name="email" required>
-                    </div>
-        
-                    <div class="form-field">
-                        <label for="password">Password</label>
-                        <input type="password" id="password" name="password" required>
-                    </div>
-        
-                    <div class="form-field">
-                        <label for="confirm-password">Confirm Password</label>
-                        <input type="password" id="confirm-password" name="confirm-password" required>
-                        
-                    </div>
-        <div class="form-field">
-                    <button type="submit" class="register-btn">Register</button>
-                </div>
-                </form>
-                
-            </div>
-           
-        </div>
-        <footer class="footer">
-            <p>
-                
-                © 2024 Extreme Certificate Verification App. All Rights Reserved.</p>
-        </footer>
-        <script src="signup.js"></script>
-
+    
+    <!--Right Form Section-->
+    <div class="right-section">
+      <img src="https://img.freepik.com/premium-vector/illustration-vector-graphic-cartoon-character-online-registration_516790-1805.jpg" alt="">
+      </div>
+      
+  </div>
+  <script src="signup.js"></script>
 </body>
 </html>
