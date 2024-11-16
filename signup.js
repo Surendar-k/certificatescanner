@@ -28,9 +28,9 @@ function validateForm(event) {
     }
 
     
-    const passwordRegex = /^(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/;
+    const passwordRegex = /^(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{5,}$/;
     if (!passwordRegex.test(password)) {
-        alert('Password must contain at least 8 characters, 1 number, and 1 symbol.');
+        alert('Password must contain at least 5 characters, 1 number, and 1 symbol.');
         isValid = false;
     }
 
