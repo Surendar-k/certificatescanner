@@ -1,50 +1,57 @@
-document.addEventListener("DOMContentLoaded", function() {
-    const form = document.querySelector('form');
-    const emailInput = document.getElementById('email');
-    const passwordInput = document.getElementById('password');
 
-    const errorMessage = document.createElement('div');
-    errorMessage.classList.add('alert', 'alert-danger', 'd-none');
-    form.appendChild(errorMessage);
-
-    function validateEmail(email) {
-        const re = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
-        return re.test(email);
-    }
-
-    function validatePassword(password) {
-        return password.length >= 6;
-    }
-
-    function validateForm() {
-        errorMessage.textContent = '';
-        errorMessage.classList.add('d-none');
-
-        const email = emailInput.value.trim();
-        const password = passwordInput.value.trim();
-
-        if (!validateEmail(email)) {
-            errorMessage.textContent = 'Please enter a valid email address.';
-            errorMessage.classList.remove('d-none');
-            return;
-        }
-
-        if (!validatePassword(password)) {
-            errorMessage.textContent = 'Password must be at least 6 characters long.';
-            errorMessage.classList.remove('d-none');
-            return;
-        }
-
-        alert("Form is valid. Proceeding with login...");
-    }
-
-    emailInput.addEventListener('focus', function() {
-        errorMessage.classList.add('d-none');
+document.addEventListener("DOMContentLoaded", () => {
+    
+    const form = document.querySelector("form");
+    const emailInput = document.querySelector("#email");
+    const passwordInput = document.querySelector("#password");
+    const signInButton = document.querySelector(".btn");
+    const googleButton = document.querySelector(".google-btn");
+    const facebookButton = document.querySelector(".facebook-btn");
+  
+    
+    const togglePassword = document.createElement("i");
+    togglePassword.className = "fas fa-eye";
+    togglePassword.style.position = "absolute";
+    togglePassword.style.right = "15px";
+    togglePassword.style.top = "35px";
+    togglePassword.style.cursor = "pointer";
+    togglePassword.style.color = "#888";
+    passwordInput.parentNode.style.position = "relative";
+    passwordInput.parentNode.appendChild(togglePassword);
+  
+    togglePassword.addEventListener("click", () => {
+      if (passwordInput.type === "password") {
+        passwordInput.type = "text";
+        togglePassword.className = "fas fa-eye-slash";
+      } else {
+        passwordInput.type = "password";
+        togglePassword.className = "fas fa-eye";
+      }
     });
-
-    passwordInput.addEventListener('focus', function() {
-        errorMessage.classList.add('d-none');
+  
+    
+    form.addEventListener("submit", (e) => {
+      e.preventDefault(); 
+  
+      
+      if (!emailInput.value || !passwordInput.value) {
+        alert("Please fill out all fields!");
+        return;
+      }
+  
+     
+      alert("Sign-in successful!");
     });
-});
-
+  
+   
+    googleButton.addEventListener("click", () => {
+      alert("Google Sign-In not implemented in this demo.");
+    });
+  
+    
+    facebookButton.addEventListener("click", () => {
+      alert("Facebook Sign-In not implemented in this demo.");
+    });
+  });
+  
 
