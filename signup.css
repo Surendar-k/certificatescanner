@@ -101,7 +101,7 @@ body {
   .google-btn {
     background-color: rgb(110, 221, 85);
     width: 200px;
-    margin-right: 10px; /* Adds space between buttons */
+    margin-right: 10px; 
 }
 .google-btn:hover{
     background-color: rgb(210, 36, 36);
